@@ -18,6 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nC-hB-DuC">
+                                <rect key="frame" x="30" y="118" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Width" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIZ-mj-EoY">
+                                <rect key="frame" x="30" y="149" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-eX-ViG">
+                                <rect key="frame" x="30" y="199" width="354" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserDefaults Data : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqf-6v-9oH">
+                                <rect key="frame" x="130" y="433.5" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Empty Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReL-NQ-py4">
                                 <rect key="frame" x="162.5" y="464.5" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -25,48 +49,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="We6-MH-57q">
-                                <rect key="frame" x="187.5" y="635.5" width="39" height="30"/>
-                                <state key="normal" title="NEXT"/>
+                                <rect key="frame" x="161.5" y="635.5" width="91" height="30"/>
+                                <state key="normal" title="NEXT(PUSH)"/>
                                 <connections>
                                     <action selector="ibActionMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EOd-pp-YaM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL0-qg-HOu">
-                                <rect key="frame" x="187.5" y="675.5" width="39" height="30"/>
-                                <state key="normal" title="NEXT"/>
+                                <rect key="frame" x="155.5" y="675.5" width="103" height="30"/>
+                                <state key="normal" title="NEXT(MODAL)"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Width" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VIZ-mj-EoY">
-                                <rect key="frame" x="30" y="118" width="354" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Height" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAo-eX-ViG">
-                                <rect key="frame" x="30" y="168" width="354" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ypu-Zo-7Go">
-                                <rect key="frame" x="187" y="273" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8nC-hB-DuC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="2Zc-3L-zwr"/>
                             <constraint firstItem="VL0-qg-HOu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2p3-tR-xpX"/>
                             <constraint firstAttribute="trailing" secondItem="VIZ-mj-EoY" secondAttribute="trailing" constant="30" id="4MA-NB-h9u"/>
+                            <constraint firstItem="ReL-NQ-py4" firstAttribute="top" secondItem="Eqf-6v-9oH" secondAttribute="bottom" constant="10" id="BwS-LM-ENR"/>
+                            <constraint firstItem="VIZ-mj-EoY" firstAttribute="top" secondItem="8nC-hB-DuC" secondAttribute="bottom" constant="10" id="Fno-AP-fJr"/>
                             <constraint firstItem="VIZ-mj-EoY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="GmJ-Wq-7A3"/>
                             <constraint firstItem="ZAo-eX-ViG" firstAttribute="top" secondItem="VIZ-mj-EoY" secondAttribute="bottom" constant="20" id="KmY-4m-mNb"/>
+                            <constraint firstItem="8nC-hB-DuC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Ndk-kY-yrx"/>
                             <constraint firstItem="ZAo-eX-ViG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="OkD-MZ-iiu"/>
                             <constraint firstItem="We6-MH-57q" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="POX-HN-BA0"/>
                             <constraint firstItem="VL0-qg-HOu" firstAttribute="top" secondItem="We6-MH-57q" secondAttribute="bottom" constant="10" id="T8g-JS-Ine"/>
+                            <constraint firstItem="Eqf-6v-9oH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YAd-v5-G76"/>
                             <constraint firstItem="ReL-NQ-py4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZYF-ev-7uM"/>
                             <constraint firstItem="We6-MH-57q" firstAttribute="top" secondItem="ReL-NQ-py4" secondAttribute="bottom" constant="150" id="aJO-6l-4eM"/>
-                            <constraint firstItem="VIZ-mj-EoY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="aZ4-SN-qLv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8nC-hB-DuC" secondAttribute="trailing" symbolic="YES" id="b6S-xK-29b"/>
                             <constraint firstItem="ReL-NQ-py4" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hXq-Xr-2tt"/>
                             <constraint firstAttribute="trailing" secondItem="ZAo-eX-ViG" secondAttribute="trailing" constant="30" id="wWU-wZ-bfE"/>
                         </constraints>
@@ -75,7 +85,6 @@
                     <navigationItem key="navigationItem" id="7fG-0e-KGU"/>
                     <connections>
                         <outlet property="heightTextField" destination="ZAo-eX-ViG" id="9P1-FX-N1Y"/>
-                        <outlet property="test" destination="ypu-Zo-7Go" id="Ve1-ct-fc4"/>
                         <outlet property="widthTextField" destination="VIZ-mj-EoY" id="ilK-Kb-B8t"/>
                         <segue destination="RvD-J2-fII" kind="show" identifier="moveSecond" id="xiY-hR-jHx"/>
                     </connections>
@@ -128,7 +137,6 @@
         <!--Navigation Controller-->
         <scene sceneID="jPy-aa-oSt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BSV-d3-d4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MfP-O7-ElP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ESF-bE-B0g">
@@ -140,6 +148,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nAh-1x-lAs"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSV-d3-d4f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="272" y="134"/>
         </scene>

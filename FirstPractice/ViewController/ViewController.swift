@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var widthTextField: UITextField!
     @IBOutlet weak var heightTextField: UITextField!
     
-    @IBOutlet weak var test: UITextField!
   
     override func viewDidLoad() {
         super.viewDidLoad()
